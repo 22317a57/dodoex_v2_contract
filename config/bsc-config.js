@@ -70,6 +70,9 @@ module.exports = {
         InitializableERC1155: "",
         NFTTokenFactory: "",
 
+        DodoNftErc721: "",
+        DodoNftErc1155: "",
+
         DODONFTRegistry: "",
         DODONFTProxy: "",
 

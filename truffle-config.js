@@ -60,8 +60,9 @@ module.exports = {
     MULTIHOP:       false,
     CpProxy:        false,
     DEPLOY_NFT:     false,
+    COLLECTIONS:    false,
     MYSTERYBOX_V1:  false,
-    Drops_V2:       true
+    Drops_V2:       false,
   },
 
   networks: {
