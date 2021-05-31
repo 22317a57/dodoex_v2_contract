@@ -45,7 +45,6 @@ module.exports = async (deployer, network, accounts) => {
     if (CONFIG == null) return;
     //TOKEN
     let WETHAddress = CONFIG.WETH;
-    let DODOTokenAddress = CONFIG.DODO;
 
     //Helper
     let DODOSellHelperAddress = CONFIG.DODOSellHelper;
@@ -103,7 +102,6 @@ module.exports = async (deployer, network, accounts) => {
         logger.log("Deploy type: V2");
         logger.log("multiSigAddress: ", multiSigAddress)
 
-        if (DODOTokenAddress == "") return;
         //Helper
         if (DODOSellHelperAddress == "") {
             await deployer.deploy(DODOSellHelper);
