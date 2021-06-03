@@ -19,7 +19,7 @@ module.exports = {
         DODONFTProxy: "", //暂无
 
         //================= DropsV1 =================
-        MysteryBoxV1: "0x94a2eF99CD4F11b57Daaf688183eae536B3fbBe9",
+        MysteryBoxV1: "0xfCD7Add1CF3CC27e9c35e6C43930a686b57818D3",
         RandomGenerator: "0x69C8a7fc6E05d7aa36114B3e35F62DEcA8E11F6E",
         RandomPool: [],
 
