@@ -12,6 +12,11 @@ lint/
 script/
 flattered/
 
+deploy-detail-v2.0.txt
+deploy-drops.txt
+deploy-nft.txt
+
+
 # VIM
 *.swo
 *.swp
