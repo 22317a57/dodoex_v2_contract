@@ -1,7 +1,70 @@
 module.exports = {
     RINKEBY_CONFIG: {
+        //TOKEN
+        WETH: "0xB26c0d8Be2960c70641A95A9195BE1f59Ac83aC0",
+        CHI: "0x0000000000000000000000000000000000000000",
+        DODO: "0xeaa70c2a40820dF9D38149C84dd943CFcB562587",
+
+        //Helper
+        DODOSellHelper: "0x4635FAc4471BC5B5839007f1EF65ff469ace333F",
+        DODOCalleeHelper: "0x87C296100df953aFa324ABB870891baD9dDBf0fC",
+        DODOV1PmmHelper: "0xEb06236b035f1Db7F1D181Efd635Edd621874472",
+        DODOV2RouteHelper: "0x80a70F228D8faBF20fdaf8274b9A7c4AE3551861",
+
         //Template
         CloneFactory: "0x823ECBfCCD3e6Cb67d4c9334F743BEe0E60A7349",
+        FeeRateModel: "0x0ae835f585638CCbD4D7eAA339ED033f8194Bcfe",
+        PermissionManager: "0x7949a4D350F69ef5Ff4c3079751250f5b7B86a00",
+        DVM: "0x44BD801ACAf994bD628d01d84299BE94010dc08B",
+        DPP: "0x604BFaDa2EAC7E011DdF9aA8848b38e8b02aDdD2",
+        DSP: "0xe2C23cBF03930418BF97e173FE3E950aD29fdb06",
+        DPPAdmin: "0x2FF619B4Cfe36b0F92dD933256B1581a3269a5F4",
+        CP: "0x6850eE8cF963B913a8eC3610B5f128C3100178E5",
+        ERC20: "0x80Dd80AF76D82c1962DdFb7d69C6Fdca2AAEEF00",
+        MintableERC20: "0x595D13871de67Ae33b452e6ef59Aa18d23634FdE",
+
+        //Factory
+        DVMFactory: "0x17DddEFA0c82E0c850a4Adac2aFE3F1fe977A242",
+        DPPFactory: "0x510b49803E356C750f3a93bA5508C0FFD9f71bDD",
+        DSPFactory: "0xa1ab675cB49BA0DC3F39fA4C20E216572A8dD3c8",
+        CrowdPoolingFactory: "0xDD43520779dDCfbDe373174Ee36aEaD39771cD4f",
+        UpCpFactory: "0xb09E91505347234Cb722D67042290f50F1C13749",
+        ERC20Factory: "0x48476599281CB7DD46dbE47264C4594d1d2E19A8",
+
+        //Approve
+        DODOApprove: "0xcC8d87A7C747eeE4242045C47Ef25e0A81D56ae3",
+        DODOApproveProxy: "0x790917CA55c9B01974BFDd066537Fb3DF42Bb0E3",
+
+        //Periphery
+        DODOIncentive: "0x0000000000000000000000000000000000000000",
+
+        //Adpater
+        DODOV1Adapter: "0x7ffd33271765E37FdD527a03ca13783DCD4dD3E6",
+        DODOV2Adapter: "0x733488ea274561fe8543cF5386fEcC6EE932Ba5E",
+        UniAdapter: "0x5964Af417A0cdFa8C0E171733FB1c570b2b515E8",
+
+        //Proxy
+        DODOV2Proxy: "0xba001E96AF87bF9d8D0BDA667067A9921FE6d294",
+        DSPProxy: "0x0f6345D1d07C134BB0973AD102F38eA9195F6f78",
+        CpProxy: "0x2E483CBb9e76fE6543168DEd698d9244EE1ED8Dd",
+        DODORouteProxy: "0xe2b538a781eB5a115a1359B8f363B9703Fd19dE6",
+
+
+        //vDODO
+        DODOCirculationHelper: "0xe4Aec985debDDbbCB2358e8C8F9384DD6421d163",
+        Governance: "0x0000000000000000000000000000000000000000",
+        dodoTeam: "0x7e83d9d94837eE82F0cc18a691da6f42F03F1d86",
+        vDODOToken: "0x8751f874eCd2874f2a5ced95A08364C203e4146A",
+
+        //Account
+        multiSigAddress: "0x7e83d9d94837eE82F0cc18a691da6f42F03F1d86",
+        defaultMaintainer: "0x7e83d9d94837eE82F0cc18a691da6f42F03F1d86",
+
+        //FeeRateImpl: "0xCc5e58B59158A9dfb13e4d902958689fA0e7dE9c",
+        //multiCall: "0xb7E1C577f95959a3eD11f9281702850328b4e0e4",
+        //DODO: "0xF65899222FC7C73044Fe24f954b3b29Ff092B9e2",
+        //DODOZoo: "0x168442Fec1e1E782c8770185dBb8328B91dC45c0",
+        //DODOSwapCalcHelper: "0x5020d289E1140Dc733126a71818A08F7f0fe1AE1"
 
         //================== NFT ====================
         Fragment: "0x20f7205c4addF7D4Bf8521754d57003013bC49d2",
@@ -16,7 +79,7 @@ module.exports = {
         DodoNftErc1155: "0xc498F36eF82Aa5dBE0ecF6DD56DD55398E80E13D",
 
         DODONFTRegistry: "0x69efeCA5070Cb22c1094cffEbacafC09c058c139",
-        DODONFTProxy: "", //暂无
+        DODONFTProxy: "0xbC54E337DB2E99D4f5A4BDF20875C49D08a71210",
 
         //================= DropsV1 =================
         MysteryBoxV1: "0xff29114d297Fd2945636239E09Ab8333dA5601eA",
@@ -24,8 +87,10 @@ module.exports = {
         RandomPool: [],
 
         //================= DropsV2 ==================
-        DropsFeeModel: "",
-        DropsProxy: "",
+        DropsFeeModel: "0xA012249Fac6D77Daf246BFBdC193fFBC8814298C",
+        DropsProxy: "0xa968a8B14174395c922347Ab593a0CD7EFf30cf1",
+
+        //DODODropsV2: "0x4A2b9f63AE41cF3003A494F2d8Fcd9Ed850b9A6f"
 
         // DropsERC721: "0x3df8d553275781C777f432A74EEE9099226B9d13",
         // DropsERC1155: "0x3a8EcF30428bd4e33Cd7011533DFd596F7705c8F",
